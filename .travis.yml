@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 1.9.3
+before_script: 
+ - gem install rspec
+script:
+ - bundle install
+ - rails db:setup RAILS_ENV=test
+ - cucumber
+ - rspec
