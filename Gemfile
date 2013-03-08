@@ -21,6 +21,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '~> 1.0.3'
 end
+gem 'requirejs-rails', '~> 0.9.1'
+gem 'ejs', '~> 1.1.1'
+gem 'js-routes', '~> 0.8.7'
 
 group :test do
 	gem 'rspec-rails'

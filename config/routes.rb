@@ -1,5 +1,11 @@
 Timeclock::Application.routes.draw do
 
+  # examples
+   namespace :example do
+    resource :user do
+    end
+  end
+
 	# clock events
   get "clocks" => "clock_events#index", :as => :show_clocks
   post "clock/switch" => "clock_events#clock_in_or_out", :as => :clock_switch

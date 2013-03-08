@@ -6,5 +6,5 @@ before_script:
 script:
  - bundle install
  - rake db:setup RAILS_ENV=test
- - cucumber
- - rspec
+ - bundle exec cucumber
+ - bundle exec rspec
