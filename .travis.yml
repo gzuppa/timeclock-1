@@ -5,6 +5,6 @@ before_script:
  - gem install rspec
 script:
  - bundle install
- - rails db:setup RAILS_ENV=test
+ - rake db:setup RAILS_ENV=test
  - cucumber
  - rspec
